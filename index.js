@@ -3,8 +3,8 @@ var state = {
 };
 
 var imageTitles = [
-  "Where I study",
   "Where I grew up",
+  "Where I study",
   "What I do when I'm not working",
 ];
 //1-landscape, 0-portrait
