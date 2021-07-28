@@ -2,23 +2,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #fdfdfd;
+}
+
 .opening {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(#000000aa, #000000aa),
+  background-image: linear-gradient(#00000077, #00000077),
     url("./images/ubc.jpg");
+  background-attachment: fixed;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
 }
 .opening-content {
   display: flex;
@@ -39,7 +44,6 @@ html {
   display: inline-block;
   font-size: 40px;
   font-weight: 100;
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
   letter-spacing: 3px;
 }
@@ -49,7 +53,6 @@ html {
   display: inline-block;
   font-size: 20px;
   font-weight: 100;
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
 
@@ -63,7 +66,6 @@ html {
 .opening-nav a:visited {
   font-size: 20px;
   font-weight: 100;
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-decoration: none;
   border: 1px solid white;
@@ -76,17 +78,16 @@ html {
   transition: 0.5s;
 }
 
-.projects {
-  padding-top: 20px;
+.section-container {
+  padding-bottom: 40px;
+  border-bottom: 2px solid #00000011;
 }
 
 .section-title {
   width: fit-content;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin: 40px auto;
   font-size: 40px;
   font-weight: 100;
-  font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   border-bottom: 3px solid red;
 }
@@ -98,19 +99,20 @@ html {
   grid-template-columns: 320px 320px 320px;
   grid-template-rows: 400px 400px;
   justify-content: space-between;
-  gap: 30px;
+  row-gap: 55px;
 }
 
 .project-item {
-  background-color: #eeeeee;
+  background-color: #f2f2f2;
   position: relative;
+  box-shadow: 0px 0px 3px #00000077;
 }
 
 .project-item:hover {
-  box-shadow: 3px 6px #00000077;
+  box-shadow: 4px 6px 3px #00000077;
   transition: 0.2s;
   cursor: pointer;
-  background-color: #ff000044;
+  background-color: #ff000011;
 }
 
 .view-more {
@@ -121,7 +123,6 @@ html {
   background-color: #000000aa;
   height: 180px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   display: none;
@@ -142,7 +143,6 @@ html {
 .project-title {
   font-size: 25px;
   font-weight: 100;
-  font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 2px;
   margin: 12px 10px;
   border-bottom: 2px solid red;
@@ -152,7 +152,6 @@ html {
 .tech-used {
   font-size: 16px;
   font-weight: 100;
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0 10px;
   margin-bottom: 8px;
 }
@@ -160,8 +159,279 @@ html {
 .project-description {
   font-size: 16px;
   font-weight: 100;
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0 10px;
   margin-bottom: 5px;
   line-height: 1.4;
 }
+
+.experience-list {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.experience-list-item {
+  background-color: #f2f2f2;
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.experience-description {
+  width: 850px;
+  line-height: 1.4;
+  font-size: 16px;
+  font-weight: 100;
+  padding: 10px;
+}
+
+.item-number {
+  border-radius: 50px;
+  padding: 2px 7px;
+  color: white;
+  background-color: red;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.experience-title {
+  width: 150px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+ul {
+  margin-left: 20px;
+  margin-top: 8px;
+  list-style: square;
+}
+
+.spaced-list {
+  margin-bottom: 8px;
+}
+
+.gpa {
+  width: 480px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #00000011;
+}
+
+.gpa h4 {
+  text-align: center;
+  width: 160px;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.gpa h4:nth-child(2) {
+  width: 50%;
+}
+
+.coursework .gpa:nth-child(3) {
+  border-top: none;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+.course-list {
+  width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 320px 320px;
+  grid-template-rows: 320px 320px;
+  justify-content: space-between;
+  row-gap: 55px;
+}
+
+.course-item {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 3px #00000077;
+}
+
+.course-item h2 {
+  font-size: 25px;
+  font-weight: 100;
+  padding-bottom: 2px;
+  margin: 12px 10px;
+  width: fit-content;
+}
+
+.course-item p {
+  font-weight: 100;
+  padding-bottom: 2px;
+  margin: 12px 10px;
+  font-size: 16px;
+}
+
+.course-item h3 {
+  font-weight: 100;
+  padding-bottom: 2px;
+  margin: 12px 10px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.course-item:hover {
+  cursor: pointer;
+  box-shadow: 4px 6px 3px #00000077;
+  background-color: #ff000011;
+}
+
+.awards {
+  width: 400px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.awards h4 {
+  font-size: 18px;
+  font-weight: 100;
+  border-bottom: 2px solid red;
+  display: inline-block;
+}
+
+.awards li {
+  list-style: none;
+}
+
+.awards ul li {
+  line-height: 1.4;
+}
+
+.about-box {
+  display: flex;
+  width: 1080px;
+  margin: auto;
+  padding: 0 30px 40px 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-viewer {
+  width: 52%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  position: relative;
+}
+
+.landscape {
+  width: 100%;
+  height: auto;
+}
+
+.portrait {
+  width: auto;
+  height: 100%;
+}
+.about-text p {
+  width: 100%;
+  font-weight: 100;
+  padding-bottom: 2px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.about-text {
+  width: 44%;
+}
+
+.about-box h1 {
+  margin-bottom: 10px;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.about-image-description {
+  position: absolute;
+  left: 0;
+  bottom: 80px;
+  color: white;
+  background-color: #00000077;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+}
+
+.next-image {
+  color: white;
+  background-color: #00000066;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.next-image:hover {
+  background-color: #000000aa;
+  cursor: pointer;
+}
+
+.next-image:hover p {
+  color: #ffffff;
+  font-weight: 200;
+}
+
+.next-image p {
+  font-size: 30px;
+  font-weight: 100;
+  color: #ffffffaa;
+}
+
+.prev-image {
+  color: white;
+  background-color: #00000066;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.prev-image:hover {
+  background-color: #000000aa;
+  cursor: pointer;
+}
+
+.prev-image:hover p {
+  color: #ffffff;
+  font-weight: 200;
+}
+
+.prev-image p {
+  font-size: 30px;
+  font-weight: 100;
+  color: #ffffffaa;
+}
+
+/*.invisible {
+  background-color: #00000000;
+}
+
+.invisible p {
+  color: #00000000;
+}
+
+.invisible:hover {
+  cursor: default;
+  background-color: #00000000;
+}
+
+.invisible:hover p {
+  color: #00000000;
+}*/
