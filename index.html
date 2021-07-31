@@ -3,6 +3,7 @@
   <title>Aayush Behl</title>
   <meta charset="UTF-8" />
   <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="container">
@@ -18,7 +19,7 @@
           <a href="#experience">Experience</a>
           <a href="#coursework">Coursework</a>
           <a href="#about">About me</a>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </nav>
       </div>
     </section>
@@ -28,7 +29,7 @@
     <section class="projects section-container" id="projects">
       <h1 class="section-title">PROJECTS</h1>
       <div class="project-list">
-        <div class="project-item">
+        <div class="project-item" id="gamerec">
           <img src="images/gamerec1.jpg" alt="project-image" />
           <h2 class="project-title">ML Game Recommender</h2>
           <p class="tech-used">Python | Node.js | Kotlin</p>
@@ -39,7 +40,7 @@
           </p>
           <h3 class="view-more">Click for more info!</h3>
         </div>
-        <div class="project-item">
+        <div class="project-item" id="digidiary">
           <img src="images/digidiary-1.jpg" alt="project-image" />
           <h2 class="project-title">Digidiary</h2>
           <p class="tech-used">JavaScript | HTML | CSS</p>
@@ -50,7 +51,7 @@
           </p>
           <h3 class="view-more">Click for more info!</h3>
         </div>
-        <div class="project-item">
+        <div class="project-item" id="chatroom">
           <img src="images/chatroom-1.jpg" alt="project-image" />
           <h2 class="project-title">ChatRoom</h2>
           <p class="tech-used">Java</p>
@@ -61,10 +62,10 @@
           </p>
           <h3 class="view-more">Click for more info!</h3>
         </div>
-        <div class="project-item">
+        <div class="project-item" id="portfolio">
           <img src="images/mywebsite.jpg" alt="project-image" />
           <h2 class="project-title">This Website!</h2>
-          <p class="tech-used">HTML | CSS</p>
+          <p class="tech-used">JavaScript | HTML | CSS</p>
           <p class="project-description">
             My portfolio created from scratch using newer CSS tools like Flexbox
             and CSS Grid, instead of older methods like floats.
@@ -72,6 +73,22 @@
           <h3 class="view-more">Click for more info!</h3>
         </div>
       </div>
+      <div class="popup">
+        <div class="popup-content">
+          <div class="image-band">
+            <img class="img1" src="images/digidiary-2.jpg" alt="project_image"/>
+            <img class="img2" src="images/digidiary-3.jpg" alt="project_image"/>
+          </div>
+          <h4 class="project-detail-title">Digidiary</h4>
+          <p class="tech-used-detail">Technology used: HTML | CSS | JavaScript</p>
+          <p class="project-description-detail">Digidiary is a personal project that acts like a digital diary without the hassle of turning pages and buying a new one for a new year. Users can not only log their daily thoughts/activities but also make a to-do list and set reminders for events. They can choose from yearly events (eg. birthdays), monthly events (eg. rent date), and one-time events (eg. a concert) and get reminders for them accordingly. As a student, with multiple assignments and exam dates to remember, this project helps a lot!</p>
+          <div class="project-buttons">
+            <a class="ghub-link" target="_blank">Github</a>
+            <a class="back-button">Back</a>
+          </div>
+        </div>
+      </div>
+    </div>
     </section>
     <section class="experience section-container" id="experience">
       <h1 class="section-title">EXPERIENCE</h1>
@@ -224,9 +241,8 @@
           <h3>Analysis, design and implementation of computer networks and their protocols. Application layer protocols, transmission control protocol (TCP), Internet protocol (IP), routing algorithms, reliable data transfer, multiple access, Ethernet.</h3>
           <p><strong>Technology used:</strong> Unknown</p>
         </div>
-      </div>
     </section>
-    <section class="about-me" id="about">
+    <section class="about-me section-container" id="about">
       <h1 class="section-title">ABOUT ME</h1>
       <div class="about-box">
         <div class="image-viewer">
@@ -241,10 +257,27 @@
         </div>
         <div class="about-text">
           <h1>Hello | नमस्ते | はじめまして</h1>  
-          <p>My name is Aayush Behl. I grew up in a small city called Dehradun in the foothills of the Himalayas. My interests include pretty much everything to do with software and programming, for example, Web Development and Machine Learning. I enjoy striving to be better at whatever I do. When I am not studying/working, I love playing tennis and I spend most of my free time either perfecting my strokes or in the gym! I'm fluent in English and Hindi and am currently learning Japanese.</p>
+          <p>My name is Aayush Behl and I'm from India. I grew up in a small city called Dehradun in the foothills of the Himalayas. My interests include pretty much everything to do with software and programming, for example, Web Development and Machine Learning. I enjoy striving to be better at whatever I do. When I am not studying/working, I love playing tennis and I spend most of my free time either perfecting my strokes or in the gym! I'm fluent in English and Hindi and am currently learning Japanese.</p>
         </div>
       </div>
     </section>
+    <section class="contact section-container" id="contact">
+      <h1 class="section-title">CONTACT</h1>
+      <div class="contact-box">
+      <p>Email: aayush.behl32@gmail.com</p>
+      <p>Phone: +1 236-818-9804</p> 
+      <a href="https://github.com/aayush3201" target="_blank">Github</a>
+      <a href="./data/coop_resume.pdf" download="resume.pdf">Resume</a>
+      </div>
+    </section>
+    <footer>
+      <div class="icons">
+        <a href="https://instagram.com/aayush_behl_32/" target="_blank"><i class="fa instagram fa-instagram"></i></a>
+        <a href="https://github.com/aayush3201" target="_blank"><i class="fa github fa-github"></i></a>
+        <a href="https://www.facebook.com/aayush.behl.9" target="_blank"><i class="fa facebook fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/aayushbehl32/" target="_blank"><i class="fa linkedin fa-linkedin"></i></a>
+      </div>
+    </footer>
   </div>
 </body>
 <script type="text/javascript" src="index.js"></script>
