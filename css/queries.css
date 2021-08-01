@@ -1,0 +1,136 @@
+/* Around 1100px*/
+
+@media (max-width: 69em) {
+  .project-list {
+    width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 320px 320px;
+    grid-template-rows: 400px 400px;
+    justify-content: space-between;
+    row-gap: 60px;
+  }
+
+  .experience-list {
+    width: 720px;
+    margin: 0 auto;
+  }
+
+  .experience-description {
+    width: 75%;
+  }
+
+  .course-list {
+    width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 320px 320px;
+    grid-template-rows: 320px 320px;
+    justify-content: space-between;
+    row-gap: 60px;
+  }
+
+  .about-box {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: auto;
+    padding: 0 30px 40px 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .image-viewer {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .image-band {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-band img {
+    width: 420px;
+    height: 228px;
+  }
+
+  .popup-content {
+    overflow-y: auto;
+  }
+}
+
+/*Around 730px*/
+
+@media (max-width: 46em) {
+  .project-list {
+    width: 340px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 400px;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+
+  .experience-list {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .experience-list-item {
+    padding: 5px;
+  }
+
+  .course-list {
+    width: 340px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: 320px;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+
+  .about-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px 30px 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .opening-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 150px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 32em) {
+  .gpa {
+    width: 360px;
+  }
+  .gpa h4 {
+    width: 120px;
+    font-size: 22px;
+  }
+  .contact-box {
+    width: 360px;
+    font-size: 22px;
+  }
+  .awards {
+    width: 360px;
+  }
+  .about-box h1 {
+    font-size: 25px;
+  }
+}
