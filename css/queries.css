@@ -30,6 +30,10 @@
     row-gap: 60px;
   }
 
+  .project-description-detail {
+    height: fit-content;
+  }
+
   .about-box {
     display: flex;
     flex-direction: column;
