@@ -182,6 +182,7 @@ body {
 .image-band img {
   width: 553px;
   height: 300px;
+  border: inset 5px red;
 }
 
 .view-more {

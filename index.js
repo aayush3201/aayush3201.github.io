@@ -50,6 +50,7 @@ document.querySelector(".next-image").addEventListener("click", () => {
   }
 });
 
+//Convention: the folder names in data should be same as id of that project
 document.querySelectorAll(".project-item").forEach((item) => {
   item.addEventListener("click", (e) => {
     var el = e.target;
@@ -83,7 +84,9 @@ var getDescription = (id) => {
   if (id == "gamerec")
     return 'Machine Learning Game Recommender was a project for a university course, worked on by a team of 4. It is an Android application that takes in three PS4 game cover art images as input. These images are then recognised as one of over 350 PS4 games in our database. Image recognition (created by me) is done by a combined system of two models - a YOLOv4 model which demarcates the title of the game and a Google Mobilenet model which classifies the title. The resulting predictions are then fed into another ML model which recommends games. This model was trained using user-reviews from websites like Metacritic. The ML computations happen on the backend (using Node.js). Both the predictions and the recommendations are displayed on the frontend (created using Kotlin). Click <a href="https://drive.google.com/file/d/1kjANm73xqBYNhIB9C1ETR2fLFry9JxNN/view?usp=sharing" target="_blank">here</a> for a short video demonstration of our app!';
   if (id == "portfolio")
-    return "This webpage is my portfolio as well as a personal project to learn about better layout techniques like Flexbox and CSS Grid. It also uses basic JavaScript control what happens when various components of the the page are clicked.";
+    return "This webpage is my portfolio as well as a personal project to learn about better layout techniques like Flexbox and CSS Grid. It also uses basic JavaScript control what happens when various components of the the page are clicked. The webpage is responsive too!";
+  if (id == "avl")
+    return "AVL Tree Simulator uses the canvas element in HTML to simulate an AVL Binary Search Tree data structure and shows the user what the tree would look like after a series of operations. Creating this project was especially hard due to JavaScript's lack of pointers, but the simulator works perfectly! The simulator allows users to enter commands to conveniently add or remove nodes to the tree and see what the tree looks like after the command has been executed.";
   return "Error";
 };
 
@@ -94,5 +97,6 @@ var getGithub = (id) => {
     return "https://github.com/aayush3201/aayush3201.github.io";
   if (id == "gamerec")
     return "https://github.com/aayush3201/ML_Game_Recommender";
+  if (id == "avl") return "https://github.com/aayush3201/avl-tree-simulator";
   return "#";
 };
