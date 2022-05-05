@@ -273,6 +273,27 @@ body {
   font-weight: 100;
 }
 
+.sub-heading {
+  width: fit-content;
+  margin: 40px 0;
+  font-size: 25px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  border-bottom: 3px solid red;
+}
+
+.sub-heading-2 {
+  width: fit-content;
+  margin: 40px 0 5px 0;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.sub-heading-2 span {
+  color: red;
+}
+
 .experience-title {
   width: 150px;
   text-align: center;
@@ -281,9 +302,22 @@ body {
 }
 
 ul {
-  margin-left: 20px;
-  margin-top: 8px;
-  list-style: square;
+  margin-top: 4px;
+  list-style: circle;
+}
+
+.duration {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.what-i-did {
+  padding-left: 15px;
+}
+
+.what-i-did li {
+  padding: 2px;
+  line-height: 1.4;
 }
 
 .spaced-list {
